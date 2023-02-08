@@ -1,0 +1,22 @@
+.courseprofile {
+    width: 10%;
+    background-color: rgb(132, 183, 230);
+    padding: 1%;
+    margin: 1%;
+    margin-left: 1%;
+}
+.courseinfo {
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 0%;
+}
+.courseprofileflex {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 110%;
+    margin-top: -5%;
+    transform: translate(0%, -210%);
+}
