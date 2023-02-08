@@ -1,0 +1,25 @@
+body {
+    font-family: 'Century Gothic', sans-serif;
+    max-width: 100%;
+}
+.criframe {
+    position: absolute;
+    margin-bottom: 0px;
+    transform: translate(45%, -160%);
+    background-color : white;
+}
+.iframeheader {
+    position: relative;
+    left: 50%;
+    transform: translate(-48%,-13%);
+    width: 115%;
+    height: 10%;
+    background-color: rgb(132, 183, 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p {
+    font-size: 22px;
+    margin-top: 1px;
+}

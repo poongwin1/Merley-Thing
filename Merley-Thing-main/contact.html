@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hot Beans Web - Contact Us</title>
+        <link rel="stylesheet" href="stylesimages/home.css">
+        <link rel="stylesheet" href="stylesimages/contact.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="header">
+            <img src="stylesimages/logo.png" style="max-width:100%;" alt="Logo">
+            <button class="courses-button" onclick="window.location.href='courses.html';">Courses</button>
+            <button class="contact-button" onclick="window.location.href='contact.html';">Contact Us</button>
+            <button class="careers-button" onclick="window.location.href='careers.html';">Careers</button>
+            <button class="team-button" onclick="window.location.href='team.html';">The Team</button>
+            <button class="home-button" onclick="window.location.href='home.html';">Home</button>
+        </div>
+        <div class="contacthead">
+            <h1 style="font-size:80px;">Contact Us</h1>
+        </div>
+        <div class="form">
+            <form action="">
+                <label for="fname">First Name:</label><br>
+                <input style="width: 100px" type="text" name="fname" placeholder="John" required><br>
+                <label for="sname">Surname:</label><br>
+                <input style="width: 150px" type="text" name="sname" placeholder="Doe" required><br>
+                <label for="sname">Desired position (if applicable):</label><br>
+                <select name="posdropdown">
+                    <option value="WebDeveloper">Web Developer</option>
+                    <option value="None">None</option>
+                </select>
+                <br><label for="sname">Position (other)</label><br>
+                <input style="width: 150px" type="text" name="sname" placeholder="Representative">
+                <br><label for="sname">Email</label><br>
+                <input style="width: 200px" type="email" name="sname" placeholder="John@HotBeansWeb.com">
+                <br><label for="sname">Phone</label><br>
+                <input style="width: 150px" type="number" name="sname" placeholder="07575 672389"><br>
+                Upload File (CV for applications)<br>
+                <input id="txt" type="text" placeholder="File Path" onclick="javascript:document.getElementById('file').click();">
+                <input id="txt" type="button" value="Upload File" onclick="javascript:document.getElementById('file').click();">
+                <input id="file" type="file" style="visibility: hidden;" name="img" onchange="ChangeText(this, 'txt');"><br>
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+        <div class="emailimg">
+            <img src="stylesimages/email.png" style="max-width:100%;" alt="Email Image">
+        </div>
+        <div class="footer">
+            <div class="footer-text"><p>© 2022 Hot Beans Web</p></div>
+            <div class="footer-text"><p><a href="https://www.youtube.com/c/hotbeansweb">YouTube</a></p></div>
+            <div class="footer-text"><p><a href="https://twitter.com/hotbeansweb9">Twitter</a></p></div>
+            <div class="footer-text"><p><a href="https://www.instagram.com/hotbeansweb/">Instagram</a></p></div>
+        </div>
+    </body>
+</html>
