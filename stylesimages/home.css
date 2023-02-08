@@ -42,6 +42,7 @@ body {
     text-align: left;
     margin: 0%;
     padding: 0%;
+    text-shadow: 2px 2px 5px black;
 }
 
 .bg-bean {
@@ -86,6 +87,7 @@ body {
     margin: 0%;
     padding: 0%;
     text-indent: 1.0672358591248665vh;
+    text-shadow: 2px 2px 5px black;
 }
 
 .officeimg {
