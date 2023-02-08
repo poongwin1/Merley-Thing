@@ -42,7 +42,6 @@ body {
     text-align: left;
     margin: 0%;
     padding: 0%;
-    text-shadow: 2px 4px 5px black;
 }
 
 .bg-bean {
@@ -62,6 +61,11 @@ body {
     height: auto;
     display:block
 }
+
+.logo {
+    margin-top: 10px;
+}
+
 .bg-bean img {
     transition: transform .7s ease-in-out;
 }
@@ -93,26 +97,7 @@ body {
     padding: 0%;
     width: 100%;
 }
-.courses-button{
-    background-color: #e66408;
-    color: white;
-    border: none;
-    height: 100px;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 1.875rem;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    position: absolute;
-    font-weight: bold;
-    font-family: 'Century Gothic', sans-serif;
-    left: 89%;
-    top: 5.0%;
- }
- .courses-button:hover {
-    background-color: rgb(132, 183, 230);
-    opacity: 1;
-}
+
 @media all and (max-width:30em){
     .courses-button{
     display:block;
@@ -120,89 +105,28 @@ body {
     }
 }
 
-.contact-button{
-    background-color: #e66408;
+.header h1{
     color: white;
     border: none;
-    height: 100px;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 1.875rem;
+    float: right;
+    margin: 25px;
+    margin-top: 75px;
+    width: 200px;
+    font-size: 36pt;
     cursor: pointer;
     transition: background-color 0.5s;
-    position: absolute;
-    font-weight: bold;
-    font-family: 'Century Gothic', sans-serif;
-    left: 78%;
-    top: 5.0%;
- }
- .contact-button:hover {
-    background-color: rgb(132, 183, 230);
-    opacity: 1;
-}
-
-.careers-button{
-    background-color: #e66408;
-    color: white;
-    border: none;
-    height: 100px;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 1.875rem;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    position: absolute;
     font-weight: bold;
     font-family: 'Century Gothic', sans-serif;
     left: 67%;
     top: 5.0%;
+    text-decoration: underline  ;
  }
- .careers-button:hover {
-    background-color: rgb(132, 183, 230);
+ .header h1:hover {
+    color: rgb(130, 220, 255);
     opacity: 1;
+    text-decoration: none;
 }
 
-.team-button{
-    background-color: #e66408;
-    color: white;
-    border: none;
-    height: 100px;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 1.875rem;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    position: absolute;
-    font-weight: bold;
-    font-family: 'Century Gothic', sans-serif;
-    left: 56%;
-    top: 5.0%;
- }
- .team-button:hover {
-    background-color: rgb(132, 183, 230);
-    opacity: 1;
-}
-
-.home-button{
-    background-color: #e66408;
-    color: white;
-    border: none;
-    height: 100px;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 1.875rem;
-    cursor: pointer;
-    transition: background-color 0.5s;
-    position: absolute;
-    font-weight: bold;
-    font-family: 'Century Gothic', sans-serif;
-    left: 45%;
-    top: 5.0%;
- }
- .home-button:hover {
-    background-color: rgb(132, 183, 230);
-    opacity: 1;
-}
   .footer {
     position: absolute;
     left: 50%;
