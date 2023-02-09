@@ -1,19 +1,23 @@
 .bgimage {
     background-image:url("homebackground.jpg");
-    height: 100vh;
+    /* Set a specific height */
+    min-height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(4px);
     background-size: cover;
 }
 .bgimage1 {
     background-image:url("Background1.jpg");
-    height: 100vh;
+    /* Set a specific height */
+    min-height: 1000px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(4px);
     background-size: cover;
 }
 .header {
@@ -22,6 +26,9 @@
     color: rgb(0, 0, 0);
     font-size: 2.134471718249733vw;
     text-indent: 2.134471718249733vh;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
 body {
@@ -111,8 +118,7 @@ body {
     color: white;
     border: none;
     float: right;
-    margin: 25px;
-    margin-top: 75px;
+    margin: 50px;
     width: 200px;
     font-size: 36pt;
     cursor: pointer;
@@ -129,7 +135,7 @@ body {
     text-decoration: none;
 }
 
-  .footer {
+.footer {
     position: absolute;
     left: 50%;
     transform: translate(-50%,7%);
