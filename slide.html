@@ -10,7 +10,7 @@
   <body class="body">
     <style>
     .carousel-item{
-      height: 42rem;
+      height: 54rem;
       background-image: linear-gradient(#fd7e14, #f79342);
       color: white;
       position: relative;
@@ -40,25 +40,71 @@
   .banner{
     background-image: linear-gradient(#f79342, #fd7e14);
   }
+  .footer-text{
+    display: inline;
+  }
+  li{
+    display: inline;
+  }
+  body {
+    padding-bottom: 0.5px;
+}
+.flex-parent-element {
+  display: flex;
+  width: 50%;
+}
+
+.flex-child-element {
+  flex: 1;
+  border: 2px solid blueviolet;
+  margin: 10px;
+}
+
+.flex-child-element:first-child {
+  margin-right: 20px;
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  display:inline-block;
+  margin-left: 4px;
+}
+
+.footer {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,7%);
+    width: 100%;
+    height: 10%;
+    background-color: rgb(132, 183, 230);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
     
 </style>
 <!--Nav bar-->
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="home.html">Merley Community Centre</a>
+    <a class="navbar-brand" href="#">MCA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="events.html">Events</a>
+          <a class="nav-link" href="#">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="slide.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Media
           </a>
           <ul class="dropdown-menu">
@@ -69,7 +115,7 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pricing.html">Pricing</a>
+          <a class="nav-link">Pricing</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
@@ -95,95 +141,95 @@
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
     </div>
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active")>
-      <img src="image/The merley community center.jfif" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+<section>
+    <div class="carousel-inner">
+      <div class="carousel-item active")>
+        <img src="image/The merley community center.jfif" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Merley Community Center</h5>
+          <p>This is a display of the building</p>
+        </div>
+          <li data-bs-target="#carouselExample"></li>
       </div>
-        <li data-bs-target="#carouselExample"></li>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image10 .jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
+      <div class="carousel-item">
+        <img src="image/Kitchen.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Kitchen</h5>
+          <p class="text">A display of the kitchen in the MCA</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/Bathroom.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Bathroom</h5>
+          <p class="text">A display of the bathroom</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/Hall.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Large Hall</h5>
+          <p class="text">A display of the large Hall</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/A room.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Function room</h5>
+          <p class="text">A display of the Function room</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/pentaquepitch.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Pentaquepitchl</h5>
+          <p class="text">A display of Pentaquepitchl</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/SmallHaul.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>SmallHaul</h5>
+          <p class="text">Display of the SmallHaul</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/LargeHaul.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Large Haul</h5>
+          <p class="text">Display of Large Haul</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img  src="image/Kitchen.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Kitchen</h5>
+          <p class="text">Another display of the kitchen</p>
+        </div>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="image/image1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image7.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image2.jpg .jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image9.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image4.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image10 .jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="image/image1.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-md-block">
-        <h5>First slide label</h5>
-        <p class="text">Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+</section>
 </body>
-    </div>
-    <div class="banner">
-      <div>
-        <h1>Welcome to the site</h1>
-        <h5>Sign up for free today</h5>
-        <button>Get started</button>
-      </div>  
-    </div>
+
+
+      </div>
+    </footer>
+  </nav>
+</div>
+
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-  </body>
+ 
   
 </html>
