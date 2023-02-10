@@ -1,80 +1,131 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Events</title>
-        <link rel="stylesheet" href="stylesimages/events.css">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <body style="background-color: #949393;">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="image/Slide.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body class="body">
+    <style>
+    .container{
+      position:absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+    }
+    .navbar{
+      background-image: linear-gradient(#fd7e14, #f79342);
+    }
+  .text{
+    background-position: center;
+    font-family: sans-serif;
+  }
+  .body{
+    background-image: linear-gradient(#f79342, #fd7e14);
+  }
+:root {
+    --bs-body-bg: white;
+}
+.card {
+    background-color: #ececec;
+}
+.bgimage {
+    background-image:url("homebackground.jpeg");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header {
+    background-image: linear-gradient(#FF6B00, #FA7A1E);
+    color: rgb(0, 0, 0);
+    font-size: 2.134471718249733vw;
+    text-indent: 2.134471718249733vh;
+	width: 100%;
+}
 
-		<div class="header container-fluid">
-		<ul>
-		<li class="home-button" onclick="window.location.href='home.html';">Home</li>
-		<li class="events-button" onclick="window.location.href='events.html';">Events</li>
-		<li class="media-button" onclick="window.location.href='slide.html';">Media</li>
-		<li class="pricing-button" onclick="window.location.href='pricing.html';">Pricing</li>
-		</ul>
-		</div>
-		
-		<h1 class="top container-fluid" style="text-align: center; font-family: sans-serif;">Events</h1>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 10</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Friday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 11</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Saturday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 12</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Sunday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 13</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Monday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 14</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Tuesday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 15</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Wednesday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-		
-		<div class="event container">
-		<h2 style="text-align: center; font-family: sans-serif;">February 16</h2>
-		<h3 style="text-align: center; font-family: sans-serif;">Thursday</h3>
-		<br>
-		<br>
-		<p style="text-align: center; font-family: sans-serif;">None Scheduled</p>
-		</div>
-    </body>
+.header li {
+	display: inline;
+	color: white;
+	margin-right: 5vw;
+}
+.calendar{
+  text-align: center;
+  padding: 20px;
+}
+.footer {
+    position: absolute;
+    height: 7%;
+    background-image: linear-gradient(#f79342, #fd7e14);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	position: fixed;
+   	bottom: 0px;
+}
+.footer-text {
+    margin-top: 1%;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+	color: white;
+	font-family: sans-serif;
+}
+</style>
+<!--Nav bar-->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="home.html">Merley Community Centre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="slide.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Media
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pricing.html">Pricing</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--End of nav bar start of slideshow-->
+<body class="background">
+	<div class="calendar">
+		<iframe src="https://calendar.google.com/calendar/embed?height=1080&wkst=1&bgcolor=%23F09300&ctz=UTC&title=Merley%20Community%20Centre&src=OTNlYTg2MDVhNGU0ZjgwMWU5NzViMWMyMGYzMDYxMzUwNmZmMWRhOTNjOThhNWI2ZTZkZGE4Mzc0NWU0NTFkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457" style="border-width:0" width="1920" height="1080" frameborder="0" scrolling="no"></iframe>	
+	</div>
+</body>
+  <!-- Copyright -->
+  <div class="footer container-fluid">
+    <div class="footer-text"><p>Weekday bookings: 01202 889577</p></div>
+    <div class="footer-text"><p>Weekend bookings: 01202 880235</p></div>
+    <div class="footer-text"><p>Email: mca.weekend.bookings@gmail.com</p></div>
+    <div class="footer-text"><p>Info: mca.merley@gmail.com</p></div>
+    <div class="footer-text"><p><a href="termsandconditions.html">Terms and Conditions</a></p></div>
+</div>
+  <!-- Copyright -->
 </html>
